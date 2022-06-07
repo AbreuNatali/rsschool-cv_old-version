@@ -60,4 +60,4 @@ I am a beginner Front-end Developer. I am a future Full-stack Developer.
 
 ### Language 
 ====================
-* English A2
+* English level - A2
