@@ -21,7 +21,32 @@ I am a beginner Front-end Developer. I am a future Full-stack Developer.
 
 ### Code Example 
 ====================
+```
+<!DOCTYPE html>
+<html>
+<head>
+	<!--<meta charset="Windows-1251">-->
+	<title> Привет, HTML!</title>
+	<script> 
+		function countToTen () 
+		{
+		var count = 0;
+			while (count < 10) 
+			{
+			count++;
+			document.getElementById("theCount").innerHTML +=
+			count + "<br>";
+			}
+		}
+	</script>
+</head>
+<body onload="countToTen();">
+	<h1>Посчитаем до 10 вместе с JavaScript!</h1>
+	<p id="theCount"> </p>	
+</body>
 
+</html>
+```
 
 ### Experience 
 ====================
