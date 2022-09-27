@@ -8,10 +8,10 @@
   </head>
 <body>
 
-  <!--Шапка-->
-  <header class="header">
+<div class="container">
 
-    <div class="container"></div>
+    <!--Шапка-->
+  <header class="header">    
 
     <div class="foto">
       <img src="assets/img/Fotoavatar_4x3.jpg" alt="Foto-avatar">
@@ -37,80 +37,86 @@
         <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
       </ul>
     </nav>
-
     
-    <!--<nav class="nav">
-        <a href="#contacts">Contacts</a>
-        <a href="#skills">Skills</a>
-        <a href="#codeexample">Code Example</a>
-        <a href="#education">Education</a>
-        <a href="#language">Language</a>
-      <nav>-->
-
-
   </header>
 
   <!--Основная часть-->
-  <main class="main">
-
-    <div class="container"></div>
-
-    <div id="contacts">
-      <h2>Contacts</h2>
-      <ul>
-        <li><img class="icon" src="assets/img/icon-location.png" alt="icon-location">&emsp;Minsk, Belarus</li>
-        <li><img class="icon" src="assets/img/icon-email.png" alt="icon-email">&emsp;abreu.natali@gmail.com</li>
-        <li><img class="icon" src="assets/img/icon-github.png" alt="icon-github">&emsp;AbreuNatali</li>
-        <li><img class="icon" src="assets/img/icon-discord.png" alt="icon-discord">&emsp;Natali Abreu</li>
-      </ul>
-    </div>
-
-    <div id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML, CSS</li>
-        <li>JavaScript (basic knowledge)</li>
-        <li>Git/GitHub, Chrome Devtools (basic knowledge)</li>
-      </ul>
-    </div>
-
-    <div id="code">
-      <h2>Code</h2>
-      <ul>
-        <li>HTML, CSS</li>
-        <li>JavaScript (basic knowledge)</li>
-        <li>Git/GitHub, Chrome Devtools (basic knowledge)</li>
-      </ul>
-    </div>
-
-    <div id="projects">
-      <h2>Projects</h2>
-      <p>
-        Уou can see my little practice <a href="https://github.com/AbreuNatali" target="_blank">here.</a>
-      </p>
-    </div>
+  <main class="main"> 
     
-    <div id="education">
-      <h2>Education</h2>
-      <ul>
-        <li>Belarusian State University. Physics faculty</li>         
-      </ul>
+    <div class="main-left">
+      <div id="contacts">
+        <h2>Contacts</h2>
+        <ul>
+          <li><img class="icon" src="assets/img/icon-location.png" alt="icon-location">&emsp;Minsk, Belarus</li>
+          <li><img class="icon" src="assets/img/icon-email.png" alt="icon-email">&emsp;abreu.natali@gmail.com</li>
+          <li><img class="icon" src="assets/img/icon-github.png" alt="icon-github">&emsp;AbreuNatali</li>
+          <li><img class="icon" src="assets/img/icon-discord.png" alt="icon-discord">&emsp;Natali Abreu</li>
+        </ul>
+      </div>
     </div>
-    
-    <div id="courses">
-      <h2>Courses</h2>
-      <ul>
-        <li>Course «JavaScript/Front-end. Stage 0» in The RS School (studying now)</li>
-        <li>Course «Software Testing Basics» in The QA Academy</li>
-        <li>Course “Software Testing Fundamentals”» in The QA Academy</li>
-      </ul>
-    </div>
-    
-    <div id="english">
-      <h2>English</h2>
-      <ul>
-        <li>Level A2</li>
-      </ul>
+
+    <div class="main-right">
+      <div id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML, CSS</li>
+          <li>JavaScript (basic knowledge)</li>
+          <li>Git/GitHub (basic knowledge)</li>
+          <li>VS Code, Chrome Devtools, Figma, Photoshop</li>
+        </ul>
+      </div>
+
+      <div id="code">
+        <h2>Code</h2>
+        <pre class="code-example">
+          <code >
+            // Write a function that takes an integer as input, 
+            and returns the number of bits that are equal to one 
+            in the binary representation of that number. 
+            You can guarantee that input is non-negative.
+
+            var countBits = function(n) {
+            let counter = 0;
+            let strBin = n.toString(2);
+            for (let i=0; i &lt; strBin.length; i++){
+            if (strBin[i] === '1') ++counter
+            }
+            return counter;
+            }
+          </code>        
+        </pre>
+      </div>
+
+      <div id="projects">
+        <h2>Projects</h2>
+        <p>
+          Уou can see my little practice <a href="https://github.com/AbreuNatali" target="_blank">here.</a>
+        </p>
+      </div>
+      
+      <div id="education">
+        <h2>Education</h2>
+        <ul>
+          <li>Belarusian State University. Physics faculty</li>         
+        </ul>
+      </div>
+      
+      <div id="courses">
+        <h2>Courses</h2>
+        <ul>
+          <li>Course «JavaScript/Front-end. Stage 0» in The RS School (studying now)</li>
+          <li>Course «Software Testing Basics» in The QA Academy</li>
+          <li>Course “Software Testing Fundamentals”» in The QA Academy</li>
+        </ul>
+      </div>
+      
+      <div id="english">
+        <h2>English</h2>
+        <ul>
+          <li>Level A2</li>
+        </ul>
+      </div>
+
     </div>
 
   </main>
@@ -124,6 +130,9 @@
       </a>
       <em>2022</em>      
     </div>
-  </footer>  
+  </footer>
+
+  </div>
+    
 </body>
 </html>
