@@ -11,46 +11,33 @@
 ### About Me 
 ====================
 
-I am a beginner Front-end Developer. I am a future Full-stack Developer. 
+My first education is technical, I am a physicist-mathematician. But the previous professional activity used the received knowledge only partially, it was necessary to receive new knowledge necessary for this all the time. Therefore, when the opportunity arose to continue doing what I really want, I decided "to come in IT" :) and become a front-end developer, and then grow into a full-stack developer. 
 
 ### Skills 
 ====================
-* HTML, SCC 
+* HTML, CSS 
 * JavaScript (basic knowledge)
 * Git/GitHub (basic knowledge)
+* VS Code, Figma, Photoshop
 
 ### Code Example 
 ====================
 ```
-<!DOCTYPE html>
-<html>
-<head>
-	<!--<meta charset="Windows-1251">-->
-	<title> Привет, HTML!</title>
-	<script> 
-		function countToTen () 
-		{
-		var count = 0;
-			while (count < 10) 
-			{
-			count++;
-			document.getElementById("theCount").innerHTML +=
-			count + "<br>";
-			}
-		}
-	</script>
-</head>
-<body onload="countToTen();">
-	<h1>Посчитаем до 10 вместе с JavaScript!</h1>
-	<p id="theCount"> </p>	
-</body>
+// Write a function that takes an integer as input, and returns the number of bits that are equal to one in the binary representation of that number. You can guarantee that input is non-negative.
 
-</html>
+var countBits = function(n) {
+  let counter = 0;
+  let strBin = n.toString(2);
+  for (let i=0; i<strBin.length; i++){
+    if (strBin[i] === '1') ++counter
+  }
+  return counter;
+}
 ```
 
 ### Experience 
 ====================
-
+At the moment, there is no direct experience in programming.
 
 ### Education 
 ====================
